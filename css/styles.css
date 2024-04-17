@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    /* image:100%; */
 }
 
 body {
@@ -12,51 +11,50 @@ body {
 
 header div {
     display: flex;
-    direction: row;
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 30px;
+    flex-direction: row;
+    background-color: chartreuse;
 }
 
 header div a img {
-    display: flex;
-    direction: row;
     justify-content: start;
     width: 210px;
     padding: 20px 0 0 0;
 }
 
 header div nav {
-    display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     padding-bottom: 20px;
+    background-color: aqua;
 }
 
 header div nav ul {
     display: flex;
-    padding-left: 250px;
+    padding-left: auto;
 }
 
 
-header div nav ul li:nth-child(1) {
+.heading-a-shop {
     margin: 10px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     list-style: none;
+    color: green;
 }
 
-header div nav ul li:nth-child(2) {
+.heading-a-about-us {
     margin: 10px;
     justify-content: end;
     font-size: 1.6rem;
     font-weight: 500;
     list-style: none;
     width: 200px;
+    color: red;
 }
 
-
-
-/* SECTION 1 IMAGES */
+/*section-1-images*/
 
 /* top image */
 .images-1st {
@@ -101,27 +99,27 @@ header div nav ul li:nth-child(2) {
 }
 /* SECTION 1 TEXT */
 
-#section-1 .body-copy p {
+#section-1 .art1-body-copy p {
     color: #000;
     font-size: 1.6rem;
     margin: 0;
 }
 
-#section-1 .body-copy h1 {
+#section-1 .art1-body-copy h1 {
     color: #000;
     font-size: 3.2rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
 
-#section-1 .body-copy h2 {
+#section-1 .art1-body-copy h2 {
     color: #000;
     font-size: 1.7rem;
     display: flex;
     margin: 0;
 }
 
-#section-1 .body-copy a {
+#section-1 .art1-body-copy a {
     color: #fff;
     background-color: black;
     font-size: 1.266rem;
@@ -405,4 +403,58 @@ body footer p {
     justify-content: center;
     font-size: 1.3rem;
     padding: 27px 0 27px 0;
+}
+
+/*media-queries*/
+
+@media (min-width:768px) {
+
+    body {
+        background-color: rgb(142, 215, 255);
+    }
+
+    /* article-1/4-images-arrange */
+    .images-1st {
+        background-color: pink;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+    .art1-image1 {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+
+    .art1-image2 {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+
+    .art1-image3 {
+        grid-row: 2 / 3;
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+
+    .art1-image2 {
+        grid-row: 2 / 3;
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+    /* article-1-2-3-text-columns */
+
+
+}
+
+@media (min-width:960px) {
+
+    body {
+        background-color: rgb(255, 146, 146);
+    }
+
 }
