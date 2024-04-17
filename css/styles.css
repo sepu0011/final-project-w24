@@ -15,7 +15,7 @@ header div {
     margin-bottom: 0;
     padding-top: 30px;
     flex-direction: row;
-    background-color: chartreuse;
+    
 }
 
 header div a img {
@@ -27,12 +27,13 @@ header div a img {
 header div nav {
     justify-content: end;
     padding-bottom: 20px;
-    background-color: aqua;
+    
 }
 
 header div nav ul {
     display: flex;
-    padding-left: auto;
+    padding-left: 220px;
+    list-style: none;
 }
 
 
@@ -41,7 +42,7 @@ header div nav ul {
     font-size: 1.6rem;
     font-weight: 500;
     list-style: none;
-    color: green;
+    color: #000;
 }
 
 .heading-a-about-us {
@@ -51,7 +52,7 @@ header div nav ul {
     font-weight: 500;
     list-style: none;
     width: 200px;
-    color: red;
+    color: #000;
 }
 
 /*section-1-images*/
