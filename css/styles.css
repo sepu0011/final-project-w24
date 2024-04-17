@@ -43,6 +43,7 @@ header div nav ul {
     font-weight: 500;
     list-style: none;
     color: #000;
+    list-style: none;
 }
 
 .heading-a-about-us {
@@ -53,6 +54,7 @@ header div nav ul {
     list-style: none;
     width: 200px;
     color: #000;
+    list-style: none;
 }
 
 /*section-1-images*/
